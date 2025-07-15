@@ -320,7 +320,7 @@ This file is a utility script used to pre-populate the admin database with a lis
 ```$stmt->bind_param("ssss", $name, $email, $password, $gender);```
 
 📥 Seeded User Accounts:
-
+```
 1) Name: Hamza Firdaws     
 Email: hamza1@gmail.com
 Password: Hamza123
@@ -336,6 +336,7 @@ Email: hiba1@gmail.com
 Password: Hiba123
 Gender: Ms
 
+```
     ⚠️ These passwords are stored hashed, making them secure and unreadable in the database.
 
 🧪 Output:
