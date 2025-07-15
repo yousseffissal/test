@@ -336,7 +336,6 @@ Gender: Mr
 Email: hiba1@gmail.com
 Password: Hiba123
 Gender: Ms
-
 ```
     ⚠️ These passwords are stored hashed, making them secure and unreadable in the database.
 
