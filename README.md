@@ -572,12 +572,11 @@ Import the provided .sql files to create the databases and the tables:
 
 10) ✅ Done! You can now:
 
-    ✔️ Register new members.
-    ✔️ Log in as an Admin.
-    ✔️ View, search, update, delete & control registrations.
-
-And use all other Features listed in this README file.
-
+        ✔️ Register new members.
+        ✔️ Log in as an Admin.
+        ✔️ View, search, update, delete & control registrations.
+        ✔️ And use all other Features listed in this README file
+        
 ---------------------------------
 
 This was my final project!
