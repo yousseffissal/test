@@ -259,17 +259,17 @@ This file serves as the main backend handler for the registration form. It proce
 
     ✔️ Establishes a secure PDO connection to the database:
 
-`$pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);`
+```$pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);```
 
     ✔️ Validates that all required fields are filled before processing.
 
     ✔️ Uses prepared statements to prevent SQL injection:
 
-`$stmt = $pdo->prepare("INSERT INTO registrations (...) VALUES (...)");`
+```$stmt = $pdo->prepare("INSERT INTO registrations (...) VALUES (...)");```
 
     ✔️ Converts the user's name to uppercase and sanitizes it using htmlspecialchars() for safe HTML output:
 
-`$Name = strtoupper(htmlspecialchars($_POST['Name']));`
+```$Name = strtoupper(htmlspecialchars($_POST['Name']));```
 
 📬 Frontend – Confirmation Page:
 
@@ -306,18 +306,18 @@ This file is a utility script used to pre-populate the admin database with a lis
 
     ✔️ Connects to a MySQL database named Admin using the mysqli extension:
 
-`$connection = new mysqli("localhost", "root", "", "Admin");`
+```$connection = new mysqli("localhost", "root", "", "Admin");```
 
     ✔️ Defines a list of default users in the format: [Full Name, Email, Plain Password, Gender]
 
     ✔️ Passwords are hashed using password_hash() with the PASSWORD_DEFAULT algorithm before being stored:
 
-`$password = password_hash($user[2], PASSWORD_DEFAULT);`
+```$password = password_hash($user[2], PASSWORD_DEFAULT);```
 
     ✔️ Uses prepared statements and parameter binding to prevent SQL injection:
 
-`$stmt = $connection->prepare("INSERT INTO users (...) VALUES (?, ?, ?, ?)");`
-`$stmt->bind_param("ssss", $name, $email, $password, $gender);`
+```$stmt = $connection->prepare("INSERT INTO users (...) VALUES (?, ?, ?, ?)");```
+```$stmt->bind_param("ssss", $name, $email, $password, $gender);```
 
 📥 Seeded User Accounts:
 
@@ -406,7 +406,7 @@ This is the core PHP file that powers the Admin Dashboard, handling everything f
 
 🧪 Search Feature:
 
-`$stmt = $pdo_registration->prepare("SELECT * FROM registrations WHERE full_name LIKE :search ORDER BY full_name ASC");`
+```$stmt = $pdo_registration->prepare("SELECT * FROM registrations WHERE full_name LIKE :search ORDER BY full_name ASC");```
 
     ✔️ Admins can search members by typing part of their name.
     ✔️ Results are updated dynamically on the page.
