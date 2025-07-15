@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../imgs & videos/img/favacon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>CTDE CLUB REGISTRATION 2026</title>
+</head>
+<body>
+    <div class="box">
+
+        <!-- Left Section: Form -->
+        <div class="box1">
+            <div class="form_container_border">
+                <div class="form_container">
+                    <h2>CTDE CLUB REGISTRATION 2026 🍀</h2>
+                    <h4>💻 Welcome to our website</h4>
+                    <p><span style="color:rgb(223, 0, 0);">Please enter your informations</span></p>
+
+                    <form action="../php/index.php" method="post">
+
+                        <!-- Row 1 -->
+                        <div class="form_row">
+                            <div class="form_group">
+                                <label>Full Name *</label>
+                                <input type="text" placeholder="First and Last Name" name="Name" required>
+                            </div>
+                            <div class="form_group">
+                                <label>Age *</label>
+                                <input type="number" placeholder="Your age" name="Age" required>
+                            </div>
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="form_row">
+                            <div class="form_group">
+                                <label>University Level *</label>
+                                <input type="text" placeholder="e.g. Deust/Master/PHD..." name="niveau" required>
+                            </div>
+                            <div class="form_group">
+                                <label>Phone Number *</label>
+                                <input type="text" placeholder="e.g. +212 X-XX-XX-XX-XX" name="tele" required>
+                            </div>
+                        </div>
+
+                        <!-- Row 3 -->
+                        <div class="form_row">
+                            <div class="form_group">
+                                <label>Email Address *</label>
+                                <input type="email" placeholder="e.g. fakemail@gmail.com" name="Email">
+                            </div>
+                            <div class="form_group">
+                                <label>Gender *</label>
+                                <select name="genre" required>
+                                    <option value="">--Select your gender--</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>                            
+                        </div>
+
+                        <!-- Hobby -->
+                        <div class="form_group">
+                            <label>🎨 Favorite Hobby</label>
+                            <select name="Hobby" required>
+                                <option value="">--Select your hobby--</option>
+                                <option value="Drawing/Painting">Drawing/Painting</option>
+                                <option value="Photography">Photography</option>
+                                <option value="Writing">Writing</option>
+                                <option value="Crafting/DIY">Crafting/DIY</option>
+                                <option value="Music">Music</option>
+                                <option value="Reading">Reading</option>
+                                <option value="Nature Walks">Nature Walks</option>
+                                <option value="Sports">Sports</option>
+                                <option value="Video Games">Video Games</option>
+                                <option value="Content Creation">Content Creation</option>
+                                <option value="Programming">Programming</option>
+                                <option value="Other">Other...</option>
+                            </select>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form_group">
+                            <label>✍🏼 Why would you like to join?</label>
+                            <textarea 
+                                name="Message" 
+                                placeholder="Share your expectations, ideas, or what you hope to experience in the club..." 
+                                rows="8" 
+                                required
+                            ></textarea>
+                        </div>
+
+                        <!-- Submit -->
+                        <div class="form_row">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+
+                    <!-- Hidden message & Icons -->
+                    <p class="hidden">Thank you for your registration ✅</p>
+                    <img class="ctde" src="../imgs & videos/img/favacon.png" alt="">
+                    <img src="../imgs & videos/img/icon.png" alt="ICON">
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section: Info + Video -->
+        <div class="box2">
+            <div class="hello">
+                <p>
+                    <span style="font-size:30px; font-weight:700; color: rgb(253, 253, 253);">
+                        Welcome in the team !!!
+                    </span><br>
+                    <span style="font-size:13px; color: rgb(32, 117, 5); font-weight: 700;">
+                        <u>"Together for a better world, 13 years of sharing love ❤️ "</u>
+                    </span><br><br>
+                    <i>
+                        The CTDE Club (Technology, Development and Entrepreneurship Club) at FSTS 
+                        is a dynamic and innovative space where students passionate about new technologies, 
+                        software development, and entrepreneurship can meet, share, and collaborate on joint projects. 
+                        Our goal is to stimulate creativity and innovation while developing essential practical 
+                        skills for the future. Join us to take part in events, workshops, and collaborative 
+                        projects that will enrich your academic and professional journey.
+                    </i>
+                </p>
+            </div>
+
+            <!-- Video Box -->
+            <div class="tv-wrapper">
+                <div class="pin">
+                    <img src="../imgs & videos/img/pin.png" alt="">
+                </div>
+                <img src="../imgs & videos/img/television.png" alt="">
+                <video loop muted autoplay src="../imgs & videos/video/Video.mp4"></video>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
