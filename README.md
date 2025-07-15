@@ -108,11 +108,11 @@ To collect detailed information from new members who wish to join the club throu
 
 🖼️ UI Structure:
 
-    * Left section: 
+    Left section: 
 
         ✔️ Contains the registration form and visual elements like icons and logos.
 
-    * Right section: Provides information about the CTDE Club, including:
+    Right section: Provides information about the CTDE Club, including:
 
         ✔️ A brief mission statement.
         ✔️ A welcoming paragraph.
