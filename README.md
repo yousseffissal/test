@@ -1,8 +1,8 @@
 # 📌 CTDE Club Membership Form 2026 (A CS50 final project) 💼
 
-## 🎥 Video Demo: (URL)
+## 🎥 Video Demo:
 
----------------------------------
+[![watch this video for more informations](https://img.youtube.com/vi/HOj2j1axr-0/hqdefault.jpg)](https://youtu.be/HOj2j1axr-0?si=Ljwof6YDvjLQACvq)
 
 ## 📄 Description:
 
