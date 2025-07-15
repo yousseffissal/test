@@ -262,7 +262,6 @@ This file serves as the main backend handler for the registration form. It proce
 ```$pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);```
 
     ✔️ Validates that all required fields are filled before processing.
-
     ✔️ Uses prepared statements to prevent SQL injection:
 
 ```$stmt = $pdo->prepare("INSERT INTO registrations (...) VALUES (...)");```
@@ -309,7 +308,6 @@ This file is a utility script used to pre-populate the admin database with a lis
 ```$connection = new mysqli("localhost", "root", "", "Admin");```
 
     ✔️ Defines a list of default users in the format: [Full Name, Email, Plain Password, Gender]
-
     ✔️ Passwords are hashed using password_hash() with the PASSWORD_DEFAULT algorithm before being stored:
 
 ```$password = password_hash($user[2], PASSWORD_DEFAULT);```
