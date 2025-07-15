@@ -564,11 +564,11 @@ Import the provided .sql files to create the databases and the tables:
 
     `http://localhost/CS50_Final_Project_Youssef_Fissal/Code_Files/php/insert_users.php`
 
-✅ This will insert sample admin accounts with securely hashed passwords.
+    ✅ This will insert sample admin accounts with securely hashed passwords.
+    ⚠️ (Use the credentials exactly as listed in insert_users.php to login).
 
-⚠️ (Use the credentials exactly as listed in insert_users.php to login).
-
-9) ⚠️ To make sure the project works as expected, please double-check that all files and folders are in the correct locations relative to each other. Incorrect paths will result in missing styles, broken scripts, or PHP errors, if you rename or move any folder or file, make sure to update the corresponding paths in your HTML, CSS, JavaScript, and PHP files accordingly, check the Project Structure section for more informations
+9) 
+    ⚠️ To make sure the project works as expected, please double-check that all files and folders are in the correct locations relative to each other. Incorrect paths will result in missing styles, broken scripts, or PHP errors, if you rename or move any folder or file, make sure to update the corresponding paths in your HTML, CSS, JavaScript, and PHP files accordingly, check the Project Structure section for more informations
 
 10) ✅ Done! You can now:
 
@@ -576,11 +576,12 @@ Import the provided .sql files to create the databases and the tables:
         ✔️ Log in as an Admin.
         ✔️ View, search, update, delete & control registrations.
         ✔️ And use all other Features listed in this README file
-        
+
 ---------------------------------
 
-This was my final project!
-Thank you CS50 ❤️
+This was my final project!.
+
+Thank you CS50 ❤️.
 
 
 
