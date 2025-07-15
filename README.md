@@ -439,13 +439,12 @@ This SQL script sets up the Admin database and creates a table for storing admin
 🧩 Purpose:
 
     ✔️ Create a dedicated database (Admin) to store administrator accounts separately from member registrations.
-
     ✔️ Define a secure structure for the users table, including unique constraints and hashed passwords.
 
 📁 Database: 
 Admin
 
-📄 Table:
+📄 Table: 
 users
 
 🛠️ Key Features:
