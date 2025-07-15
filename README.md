@@ -548,7 +548,9 @@ Import the provided .sql files to create the databases and the tables:
 
 💡 Note:
 
-    After importing, both databases will be created with their respective table structures only (no data). The Admin table will be ready to receive admin users, and the Registrations table will be ready to store member form submissions
+```
+    After importing, both databases will be created with their respective table structures only (no data). The Admin table will be ready to receive admin users, and the Registrations table will be ready to store member form submissions.
+```
 
 6) At this point you can also if you want to open the project code in vs code to see what's going on
 
@@ -568,8 +570,9 @@ Import the provided .sql files to create the databases and the tables:
         ⚠️ (Use the credentials exactly as listed in insert_users.php to login).
 
 9) 
-
-       ⚠️ To make sure the project works as expected, please double-check that all files and folders are in the correct locations relative to each other. Incorrect paths will result in missing styles, broken scripts, or PHP errors, if you rename or move any folder or file, make sure to update the corresponding paths in your HTML, CSS, JavaScript, and PHP files accordingly, check the Project Structure section for more informations. 
+```
+⚠️ To make sure the project works as expected, please double-check that all files and folders are in the correct locations relative to each other. Incorrect paths will result in missing styles, broken scripts, or PHP errors, if you rename or move any folder or file, make sure to update the corresponding paths in your HTML, CSS, JavaScript, and PHP files accordingly, check the Project Structure section for more informations.
+``` 
 
 10) ✅ Done! You can now:
 
