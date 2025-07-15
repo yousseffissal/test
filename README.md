@@ -548,9 +548,7 @@ Import the provided .sql files to create the databases and the tables:
 
 💡 Note:
 
-```
     After importing, both databases will be created with their respective table structures only (no data). The Admin table will be ready to receive admin users, and the Registrations table will be ready to store member form submissions.
-```
 
 6) At this point you can also if you want to open the project code in vs code to see what's going on
 
