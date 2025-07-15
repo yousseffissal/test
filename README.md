@@ -38,6 +38,7 @@ This project was inspired by a real need in my university club, where I am also 
 
 ## 📂 Project Structure:
 
+```
 CS50_Final_Project_Youssef_Fissal
 │
 ├── Code_Files/
@@ -72,8 +73,9 @@ CS50_Final_Project_Youssef_Fissal
 │   └── sql/
 │       ├── Admin.sql
 │       └── database.sql
-│     
-└── README.md <!-- We are here -->
+│ 
+└── README.md
+```
 
 ### HTML files
  
