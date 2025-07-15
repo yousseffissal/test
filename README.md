@@ -532,7 +532,7 @@ registrations
 3) Copy the entire project folder into the htdocs directory inside your XAMPP installation.
     Example path:
 
-    `C:\xampp\htdocs\CS50_Final_Project_Youssef_Fissal` (it should be something like this)
+    `C:\xampp\htdocs\CS50_Final_Project_Youssef_Fissal` ( It should be something like this )
 
 4) Now we will start the Local Server, Open the XAMPP Control Panel by clicking on the app icon and Start both Apache and MySQL services.
 
@@ -547,7 +547,8 @@ Import the provided .sql files to create the databases and the tables:
         ✔️ For the Registrations database, import the file: database.sql
 
 💡 Note:
-After importing, both databases will be created with their respective table structures only (no data). The Admin table will be ready to receive admin users, and the Registrations table will be ready to store member form submissions
+
+    After importing, both databases will be created with their respective table structures only (no data). The Admin table will be ready to receive admin users, and the Registrations table will be ready to store member form submissions
 
 6) At this point you can also if you want to open the project code in vs code to see what's going on
 
@@ -564,20 +565,22 @@ After importing, both databases will be created with their respective table stru
     `http://localhost/CS50_Final_Project_Youssef_Fissal/Code_Files/php/insert_users.php`
 
 ✅ This will insert sample admin accounts with securely hashed passwords.
-⚠️ (Use the credentials exactly as listed in insert_users.php to login)
+
+⚠️ (Use the credentials exactly as listed in insert_users.php to login).
 
 9) ⚠️ To make sure the project works as expected, please double-check that all files and folders are in the correct locations relative to each other. Incorrect paths will result in missing styles, broken scripts, or PHP errors, if you rename or move any folder or file, make sure to update the corresponding paths in your HTML, CSS, JavaScript, and PHP files accordingly, check the Project Structure section for more informations
 
 10) ✅ Done! You can now:
 
-    ✔️ Register new members
-    ✔️ Log in as an admin
-    ✔️ View, search, update, delete & control registrations
+    ✔️ Register new members.
+    ✔️ Log in as an Admin.
+    ✔️ View, search, update, delete & control registrations.
 
 And use all other Features listed in this README file.
 
-This was my final project!
+---------------------------------
 
+This was my final project!
 Thank you CS50 ❤️
 
 
