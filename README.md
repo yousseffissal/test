@@ -145,7 +145,7 @@ To allow verified admins to log in with their credentials and access the registr
 🔐 Form Fields:
 
 * Full Name (required)
-* Email Address (optional for flexibility)
+* Email Address (for flexibility)
 * Password (input type password for confidentiality)
 
 🔁 Functionality:
