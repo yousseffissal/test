@@ -551,8 +551,8 @@ registrations
 
 Import the provided .sql files to create the databases and the tables:
 
-        ✔️ For the Admin database, import the file: Admin.sql
-        ✔️ For the Registrations database, import the file: database.sql
+    ✔️ For the Admin database, import the file: Admin.sql
+    ✔️ For the Registrations database, import the file: database.sql
 
 💡 Note:
 
