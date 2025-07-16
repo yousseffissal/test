@@ -125,7 +125,7 @@ To collect detailed information from new members who wish to join the club throu
 
         ✔️ A brief mission statement.
         ✔️ A welcoming paragraph.
-        ✔️ A video presentation for the club embedded inside a picture framer & a TV-themed frame.
+        ✔️ A video presentation for the club embedded inside a picture frame & a TV-themed frame.
         ✔️ A pin icon and branding visuals.
 
 🎨 Design Notes:
