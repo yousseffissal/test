@@ -21,6 +21,14 @@ This project was inspired by a real need in my university club, where I am also 
 
 ---------------------------------
 
+## 🔍 Note to the CS50 Staff
+
+While working on this project, I explored using PHP to complement the frontend stack. After researching the course guidelines, I found that there is no restriction on using additional technologies — in fact, CS50 encourages students to be curious, explore, and go beyond what's taught in the lectures.
+
+I integrated PHP to manage server-side logic and data storage, and this experience helped me understand how different parts of a web application connect together. It was a great opportunity to apply what I learned and expand my skill set.
+
+---------------------------------
+
 ## 🚀 Features:
 
 - ✔️ User-friendly registration form for club members to submit their details easily
