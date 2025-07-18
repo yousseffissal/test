@@ -551,8 +551,8 @@ registrations
 
 Create two new databases:
 
-    * Admin
-    * Registrations
+    ✔️ Admin
+    ✔️ Registrations
 
 Import the provided .sql files to create the databases and the tables:
 
