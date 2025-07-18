@@ -545,7 +545,11 @@ registrations
 
 4) Now we will start the Local Server, Open the XAMPP Control Panel by clicking on the app icon and Start both Apache and MySQL services.
 
-5) Open phpMyAdmin in your browser and Create two new databases:
+5) Open phpMyAdmin in your browser:
+
+   `http://localhost/phpmyadmin/`
+
+Create two new databases:
 
     * Admin
     * Registrations
