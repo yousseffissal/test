@@ -390,9 +390,7 @@ This is the core PHP file that powers the Admin Dashboard, handling everything f
 
 🧪 Search Feature:
 
-```
-$stmt = $pdo_registration->prepare("SELECT * FROM registrations WHERE full_name LIKE :search ORDER BY full_name ASC");
-```
+`$stmt = $pdo_registration->prepare("SELECT * FROM registrations WHERE full_name LIKE :search ORDER BY full_name ASC");`
 
     ✔️ Admins can search members by typing part of their name.
     ✔️ Results are updated dynamically on the page.
