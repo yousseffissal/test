@@ -166,6 +166,7 @@ if (isset($_POST['update_id'])) {
     <input type="text" name="search" placeholder="🔍 Search by name..." value="<?= htmlspecialchars($search) ?>">
     <button class="search-btn" type="submit">Search</button>
     <button class="delete-all-btn" type="submit" name="delete_all" onclick="return confirm('Are you sure you want to delete all registrations?')">Delete All</button>
+    <button class="download-btn" onclick="downloadCSV()">Download</button>
     <button class="logout-btn" type="submit" name="logout" onclick="return confirm('Are you sure you want to log out?')">Log Out</button>
 </form>
 

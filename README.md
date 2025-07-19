@@ -172,60 +172,25 @@ To allow verified admins to log in with their credentials and access the registr
 
 ### CSS files
  
-#### `style.css – Custom Styling`
-
-This file contains most of the custom styles used across the project to ensure a cohesive, modern, and responsive user interface without relying on external libraries or frameworks.
-
-1) 📐 Layout & Structure:
-
-* **Flexbox** is used extensively for layout, centering, and responsive design.
-* `.box`, `.box1`, `.box2`: Divide the page into two sections—form and additional content (e.g., welcome message or video).
-* Responsive adjustments are made using **media queries** to ensure proper display across screen sizes, especially hiding `.box2` on smaller screens.
-
-2) 💡 Form Styling:
-
-* `.form_container` and `.form_container_border`: Contain and style the registration form, adding white borders, background transparency, rounded corners, and shadows for visual appeal.
-* Inputs, selects, and textareas are styled with soft backgrounds, rounded borders, and spacing for readability.
-
-3) ✨ Visual Enhancements:
-
-* Buttons have gradient backgrounds and interactive hover states.
-* Images and videos are positioned with absolute layout and layering (`z-index`) to create a dynamic design (e.g., "TV" video frame).
-* Special elements like `.hello` and `.tv-wrapper` add aesthetic and thematic value to the site, emphasizing club branding.
-
-4) 📱 Responsiveness:
-
-* Breakpoints at **1074px** and **502px** ensure usability across devices:
-
-  * At smaller widths, the right section `.box2` is hidden to simplify the interface.
-  * The form takes full width on mobile with adjusted borders.
-
-5) ✅ Summary of Sections:
-
-* `body`: Sets base font, background, and centering
-* `h2`, `h4`, `p`, `label`: Text formatting
-* `input`, `select`, `textarea`: Input field styles
-* `.form_row`, `.form_group`: Layout for form fields
-* `.box`, `.box2`, `.hello`, `.tv-wrapper`, `video`, `.pin`: Layout and design visuals
-* `@media`: Responsive behavior definitions
-
 #### `style2.css – Admin Dashboard Styling`
 
 This CSS file is dedicated to the styling of the Admin Dashboard, which allows club administrators to view, update, or delete member registrations.
 
 Key roles:
 
-    ✔️ 🎨 Visual Consistency: Defines the layout, colors, and typography used in the dashboard, creating a clean and user-friendly experience.
+    ✔️ 🎨 **Visual Consistency**: Defines the layout, colors, and typography used in the dashboard, creating a clean and user-friendly experience.
 
-    ✔️ 📊 Table Styling: Enhances the visibility and structure of the data table using alternating row colors, custom headers, and spacing.
+    ✔️ 📊 **Table Styling**: Enhances the visibility and structure of the data table using alternating row colors, custom headers, and spacing.
 
-    ✔️ 🔘 Button Design: Includes customized styles for action buttons such as Delete, Update, Search, Logout, and Delete All, each with hover effects to improve usability.
+    ✔️ 🔘 **Button Design**: Includes customized styles for action buttons such as **Download**, Delete, Update, Search, Logout, and Delete All — each with hover effects to improve usability and accessibility.
 
-    ✔️ ✏️ Update Modal: Styles the popup modal used when editing user data, ensuring it's accessible and visually distinct from the background.
+    ✔️ 📥 **Download Button Styling**: A distinct style has been applied to the **Download CSV** button to highlight it as an important utility for exporting registration data, with a green background and hover scaling animation.
 
-    ✔️ 📐 Form Styling: Applies consistent and responsive design to the inputs and layout within the modal form.
+    ✔️ ✏️ **Update Modal**: Styles the popup modal used when editing user data, ensuring it's accessible and visually distinct from the background.
 
-    ✔️ 🖱️ Scrollbar Customization: Adjusts the default browser scrollbar to better match the site’s overall theme.
+    ✔️ 📐 **Form Styling**: Applies consistent and responsive design to the inputs and layout within the modal form.
+
+    ✔️ 🖱️ **Scrollbar Customization**: Adjusts the default browser scrollbar to better match the site’s overall theme.
 
 This file plays a vital role in making the admin interface professional, functional, and intuitive without relying on any third-party libraries.
 
@@ -233,24 +198,33 @@ This file plays a vital role in making the admin interface professional, functio
 
 #### `script.js — Admin Dashboard Interaction Script`
 
-This file controls the update modal in the admin dashboard, allowing easy editing of member registrations.
+This file controls the update modal in the admin dashboard and enables client-side downloading of the registration table in CSV format.
 
-🔓 openModal(id, name, age, level, phone, email, gender, hobby, message)
+📋 openModal(id, name, age, level, phone, email, gender, hobby, message)
 
-    ✔️ Fills the update form with the selected member’s data.
-    ✔️ Displays the modal for editing.
-    ✔️ Makes updating faster and reduces errors.
+   ✔️ Fills the update form with the selected member’s data.  
+   ✔️ Displays the modal for editing.  
+   ✔️ Makes updating faster and reduces errors.
 
 ❌ closeModal()
 
-    ✔️ Hides the update modal.
-    ✔️ Called when canceling or after updating.
-    ✔️ Keeps the interface clean and focused.
+   ✔️ Hides the update modal.  
+   ✔️ Called when canceling or after updating.  
+   ✔️ Keeps the interface clean and focused.
+
+📥 downloadCSV()
+
+   ✔️ Reads the visible HTML table data and formats it into a clean, well-structured CSV.  
+   ✔️ Automatically triggers a download without requiring any server-side processing.  
+   ✔️ Ensures compatibility with Excel, LibreOffice, and other spreadsheet tools.  
+   ✔️ Handles special characters and quoted values gracefully.
 
 🎯 Why It Matters
 
-    ✔️ Enhances user experience by allowing smooth, dynamic editing of records.
-    ✔️ Avoids page reloads or unnecessary navigation during data updates.
+   ✔️ Enhances user experience by allowing smooth, dynamic editing of records.  
+   ✔️ Provides admins with an easy way to export data instantly.  
+   ✔️ Avoids page reloads or unnecessary navigation during data updates or exports.  
+   ✔️ Works entirely offline — no internet or server interaction is needed for the download.
 
 ### PHP files
 
@@ -370,6 +344,7 @@ This is the core PHP file that powers the Admin Dashboard, handling everything f
         ✅ Edit/update registration details.
         ✅ Delete single entries or delete all at once.
         ✅ Log out securely.
+        ✅ Download the registration table as a CSV file.
 
 🔐 Authentication Flow:
 
@@ -390,6 +365,7 @@ This is the core PHP file that powers the Admin Dashboard, handling everything f
         ✅ Deleting individual rows.
         ✅ Deleting all registrations.
         ✅ Logging out securely.
+        ✅ Downloading the table as a CSV file.
 
 🧰 Update & Delete Functionalities:
 
@@ -402,19 +378,21 @@ This is the core PHP file that powers the Admin Dashboard, handling everything f
 
 📋 Displayed Fields:
 
-* Full Name
-* Age
-* Academic Level
-*  Phone Number
-*  Email
-* Gender
-* Favorite Hobby
-* Message
+* Full Name  
+* Age  
+* Academic Level  
+* Phone Number  
+* Email  
+* Gender  
+* Favorite Hobby  
+* Message  
 * Registration Date
 
 🧪 Search Feature:
 
-```$stmt = $pdo_registration->prepare("SELECT * FROM registrations WHERE full_name LIKE :search ORDER BY full_name ASC");```
+```
+$stmt = $pdo_registration->prepare("SELECT * FROM registrations WHERE full_name LIKE :search ORDER BY full_name ASC");
+```
 
     ✔️ Admins can search members by typing part of their name.
     ✔️ Results are updated dynamically on the page.
@@ -432,10 +410,11 @@ This is the core PHP file that powers the Admin Dashboard, handling everything f
     ✔️ Redirects users automatically on failed login.
     ✔️ Confirmation pop-ups for sensitive actions like delete/logout.
     ✔️ Fully styled dashboard using style2.css and powered by script.js.
+    ✔️ Download button for exporting the table data to a CSV file with proper formatting.
 
 🎯 Why This File Matters:
 
-This file represents the heart of the admin interface. It brings together frontend and backend logic, handles sessions, user feedback, and secure data operations, all without relying on external frameworks
+    This file represents the heart of the admin interface. It brings together frontend and backend logic, handles sessions, user feedback, and secure data operations, all without relying on external frameworks.
 
 ### SQL files
 
@@ -588,6 +567,7 @@ Import the provided .sql files to create the databases and the tables:
         ✔️ Log in as an Admin.
         ✔️ View, search, update, delete & control registrations.
         ✔️ And use all other Features listed in this README file
+        ✔️ Download/export the table data to a CSV.
 
 ---------------------------------
 
